@@ -41,20 +41,16 @@ Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat tem
  - Cookie = untuk cookie hanya perlu dengan memberi nilai kosong pada nama cookie yang ingin kita hapus datanya
  - Session = Untuk menghapus session hanya dengan memberikan sebuah bahasa unset() atau fungsi session_destroy()
 3.
-  - Session
-  (<?p hp
+  - Session 
     session_start(); ?>)/* Kode ini digunakan untuk pembuatan session
-  (<?p hp
     session_destroy(); ?>) /* Kode ini digunakan untuk penghapusan session
   - Cookies
-  ( <?p hp
   setcookie('nama_cookie', 'nilai_cookie');  ?>)/*Kode ini digunakan untuk pembuatan cookie */
-  (<?p hp
   if (isset($_COOKIE['nama_cookie'])) {
-echo 'cookie di-set <br />';
+  echo 'cookie di-set <br />';
 // Menghapus cookie, dengan masa berlaku 1 jam yang lalu setcookie('nama_cookie',
 '', time() - 1 * 3600);
 echo 'cookie dihapus';
 } else {
 echo 'unset';
-} ?>) /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
+}) /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
