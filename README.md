@@ -42,17 +42,14 @@ Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat tem
  - Session = Untuk menghapus session hanya dengan memberikan sebuah bahasa unset() atau fungsi session_destroy()
 3.
   - Session
-  <?php
-    session_start(); /* Kode ini digunakan untuk pembuatan session
-  ?>
-  <?php
-    session_destroy(); /* Kode ini digunakan untuk penghapusan session
-  ?>
+  (<?php
+    session_start(); ?>)/* Kode ini digunakan untuk pembuatan session
+  (<?php
+    session_destroy(); ?>) /* Kode ini digunakan untuk penghapusan session
   - Cookies
-  <?php
-  setcookie('nama_cookie', 'nilai_cookie'); /*Kode ini digunakan untuk pembuatan cookie */
-  ?>
-  <?php
+  ( <?php
+  setcookie('nama_cookie', 'nilai_cookie');  ?>)/*Kode ini digunakan untuk pembuatan cookie */
+  (<?php
   if (isset($_COOKIE['nama_cookie'])) {
 echo 'cookie di-set <br />';
 // Menghapus cookie, dengan masa berlaku 1 jam yang lalu setcookie('nama_cookie',
@@ -60,4 +57,4 @@ echo 'cookie di-set <br />';
 echo 'cookie dihapus';
 } else {
 echo 'unset';
-} ?> /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
+} ?>) /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
