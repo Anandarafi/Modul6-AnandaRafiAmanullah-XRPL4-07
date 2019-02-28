@@ -32,38 +32,39 @@ salah username/password
 
 1. Jelaskan menggunakan bahasa sendiri perbedaan antara cookies dan session!
 <br>
-  Cookies:
-  a. Cookies disimpan di browser klien
-  b. Cookies tidak aman bagi klien karena cookies dapat disisipi program yang tidak diketahui klien.
-  c. Data yang disimpan ke dalam metode cookies dapat bertahan lebih lama dan dapat diatur waktu kadaluarsa-nya.
+  - Cookies:
+  a. mekanisme untuk meletakkan sebuah data pada browser sehingga memudahkan untuk melakukan penelusuran di browser.
+  b. Berupa informasi dalam bentuk teks
+  c. Pembuat cokkie adlah pihak servernya.
+  d. Cookie merupakan bagian dari HTTP header, yang harus dipanggil sebelum ada output atau keluaran dari browser tersebut.
+  e. Tidak semua browser dapat menerima adanya cookie.
   <br>
-  Session
-  a. Disimpan disisi server
-  b. Lebih aman karena tidak ada file yang dimasukan ke browser klien
-  c. Setelah web browser klien dimatikan maka data yang disimpan metode session akan hilang 
-  dan waktu kadaluarsa juga tidak dapat diatur
+  -Session
+  a. Menyimpan informasi pada servernya bukan pada browser
+  b. Informasinya bersifat temporer(untuk sementara waktu), informasi dapat dihapus oleh server jika user website tersebut telah    meninggalkan website nya.
+  c. Klien tidak dapat mengakses untuk mendapatkan informasi session.
   <br>
 2. Bagaimana cara menghapus session dan cookies pada sebuah browser! 
 <br>
-  Cookie
+ - Cookie
   untuk cookie hanya perlu dengan memberi nilai kosong pada nama cookie yang ingin kita hapus datanya
-  Session
-  Untuk menghapus session hanya dengan memberikan fungsi (unset)
-3. Berikan contoh kode dari pembuatan dan menghapus cookies dan session!
+ - Session
+  Untuk menghapus session hanya dengan memberikan sebuah bahasa unset() atau fungsi session_destroy()
+  3. Berikan contoh kode dari pembuatan dan menghapus cookies dan session!
 <br>
-  Session
+  - Session
   <?php
-    session_start();/*untuk membuat session*/
+    session_start(); /* Kode ini digunakan untuk pembuatan session
   ?>
  
   <?php
-    session_destroy();/*untuk menghapus session*/
+    session_destroy(); /* Kode ini digunakan untuk penghapusan session
   ?>
   
-  Cookies
+  - Cookies
   
   <?php
-  setcookie('nama_cookie', 'nilai_cookie');/*membuat cookie*/
+  setcookie('nama_cookie', 'nilai_cookie'); /*Kode ini digunakan untuk pembuatan cookie */
   ?>
   
   <?php
@@ -74,5 +75,5 @@ echo 'cookie di-set <br />';
 echo 'cookie dihapus';
 } else {
 echo 'unset';
-} ?>
+} ?> /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
   
