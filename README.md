@@ -50,4 +50,6 @@ Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat tem
               echo 'cookie dihapus';
               } else {
               echo 'unset';
-              }) /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
+              } /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
+
+Kode yang diatus harus diketikkan di dalam kode php. tetapi setiap pembuatan dan penghapus disendirikan dalam pengetika php. maksudnya pemuatan session dalam satu php dan penghapusan session dalam satu php. jangan disatukan. supaya mudah dibaca oleh server atau websitenya
