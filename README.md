@@ -28,24 +28,22 @@ salah username/password
 ![altext](https://github.com/Anandarafi/Modul6-AnandaRafiAmanullah-XRPL4-07/blob/master/salah.PNG)
 
 # Soal
-
-
 1. Jelaskan menggunakan bahasa sendiri perbedaan antara cookies dan session!
-<br>
-  - Cookies:
-  Mekanisme Cookie untuk meletakkan sebuah data pada browser sehingga memudahkan untuk melakukan penelusuran di browser. Berupa informasi dalam bentuk teks. Pembuat cokkie adlah pihak servernya. Cookie merupakan bagian dari HTTP header, yang harus dipanggil sebelum ada output atau keluaran dari browser tersebut. Tidak semua browser dapat menerima adanya cookie.
-  <br>
-  -Session :
-  Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat temporer(untuk sementara waktu), informasi dapat dihapus oleh server jika user website tersebut telah meninggalkan website nya. Klien tidak dapat mengakses untuk mendapatkan informasi session.
-  <br>
 2. Bagaimana cara menghapus session dan cookies pada sebuah browser! 
-<br>
+  3. Berikan contoh kode dari pembuatan dan menghapus cookies dan session!
+
+Jawab
+
+1. Cookies:
+  Mekanisme Cookie untuk meletakkan sebuah data pada browser sehingga memudahkan untuk melakukan penelusuran di browser. Berupa informasi dalam bentuk teks. Pembuat cokkie adlah pihak servernya. Cookie merupakan bagian dari HTTP header, yang harus dipanggil sebelum ada output atau keluaran dari browser tersebut. Tidak semua browser dapat menerima adanya cookie.
+  Sedangkan Session :
+  Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat temporer(untuk sementara waktu), informasi dapat dihapus oleh server jika user website tersebut telah meninggalkan website nya. Klien tidak dapat mengakses untuk mendapatkan informasi session.
+2. 
  - Cookie
   untuk cookie hanya perlu dengan memberi nilai kosong pada nama cookie yang ingin kita hapus datanya
  - Session
   Untuk menghapus session hanya dengan memberikan sebuah bahasa unset() atau fungsi session_destroy()
-  3. Berikan contoh kode dari pembuatan dan menghapus cookies dan session!
-<br>
+3. <br>
   - Session
   <?php
     session_start(); /* Kode ini digunakan untuk pembuatan session
@@ -70,4 +68,6 @@ echo 'cookie dihapus';
 } else {
 echo 'unset';
 } ?> /* Kode ini digunakan untuk penghapusan cookie, dengan masa berlaku 1 jam yang lalu.
+
+ 
   
