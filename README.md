@@ -33,16 +33,10 @@ salah username/password
 1. Jelaskan menggunakan bahasa sendiri perbedaan antara cookies dan session!
 <br>
   - Cookies:
-  a. mekanisme untuk meletakkan sebuah data pada browser sehingga memudahkan untuk melakukan penelusuran di browser.
-  b. Berupa informasi dalam bentuk teks
-  c. Pembuat cokkie adlah pihak servernya.
-  d. Cookie merupakan bagian dari HTTP header, yang harus dipanggil sebelum ada output atau keluaran dari browser tersebut.
-  e. Tidak semua browser dapat menerima adanya cookie.
+  Mekanisme Cookie untuk meletakkan sebuah data pada browser sehingga memudahkan untuk melakukan penelusuran di browser. Berupa informasi dalam bentuk teks. Pembuat cokkie adlah pihak servernya. Cookie merupakan bagian dari HTTP header, yang harus dipanggil sebelum ada output atau keluaran dari browser tersebut. Tidak semua browser dapat menerima adanya cookie.
   <br>
-  -Session
-  a. Menyimpan informasi pada servernya bukan pada browser
-  b. Informasinya bersifat temporer(untuk sementara waktu), informasi dapat dihapus oleh server jika user website tersebut telah    meninggalkan website nya.
-  c. Klien tidak dapat mengakses untuk mendapatkan informasi session.
+  -Session :
+  Menyimpan informasi pada servernya bukan pada browser. Informasinya bersifat temporer(untuk sementara waktu), informasi dapat dihapus oleh server jika user website tersebut telah meninggalkan website nya. Klien tidak dapat mengakses untuk mendapatkan informasi session.
   <br>
 2. Bagaimana cara menghapus session dan cookies pada sebuah browser! 
 <br>
